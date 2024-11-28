@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas de Productos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <section>
+            <h1>Productos</h1>
+            <button id="add-product-btn">Añadir Producto</button>
+            <div id="products-container">
+
+                <div class="product-cel">
+                    <img src="https://m.media-amazon.com/images/I/51wboox04wL._SS500_.jpg" alt="iPhone 14 Pro">
+                    <div class="product-details">
+                        <h4>iPhone 14 Pro</h4>
+                        <p>Marca: Apple</p>
+                        <p>Reseñas: 2</p>
+                        <p>Promedio: 4.5 estrellas</p>
+                    </div>
+                </div>
+                <div class="product-cel">
+                    <img src="https://pe.tiendasishop.com/cdn/shop/files/IMG-10942145_9a827524-eede-4cce-a75f-9af855c4fd20.jpg?v=1722623707"
+                        alt="iPhone 15 Pro">
+                    <div class="product-details">
+                        <h4>iPhone 15 Pro</h4>
+                        <p>Marca: Apple</p>
+                        <p>Reseñas: 2</p>
+                        <p>Promedio: 4.5 estrellas</p>
+                    </div>
+                </div>
+                <div class="product-cel">
+                    <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/124473270_01/w=1500,h=1500,fit=pad"
+                        alt="Samsung Galaxy S21 Ultra">
+                    <div class="product-details">
+                        <h4>Samsung Galaxy S21 Ultra</h4>
+                        <p>Marca: Samsung</p>
+                        <p>Reseñas: 2</p>
+                        <p>Promedio: 4.5 estrellas</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Reseñas del Producto</h2>
+            <div id="selected-product"></div>
+            <div id="reviews-container"></div>
+            <button id="add-review-btn">Añadir Reseña</button>
+        </section>
+    </main>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-product-modal">&times;</span>
+            <h3>Añadir Producto</h3>
+            <input type="text" id="product-name" placeholder="Nombre del producto">
+            <input type="text" id="product-brand" placeholder="Marca">
+            <input type="text" id="product-image" placeholder="URL de la imagen">
+            <button id="save-product-btn">Guardar Producto</button>
+        </div>
+    </div>
+
+    <div id="review-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-review-modal">&times;</span>
+            <h3>Añadir Reseña</h3>
+            <input type="text" id="review-username" placeholder="Nombre de usuario">
+            <input type="number" id="review-stars" placeholder="Estrellas (1-5)" min="1" max="5">
+            <textarea id="review-opinion" placeholder="Opinión"></textarea>
+            <button id="save-review-btn">Guardar Reseña</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

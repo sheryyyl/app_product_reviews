@@ -1,0 +1,25 @@
+[
+  {
+      "id": 1730476493561,
+      "name": "iPhone 14 Pro",
+      "brand": "apple",
+      "image": "https://m.media-amazon.com/images/I/51wboox04wL._SS500_.jpg",
+      "created_at": "2024-10-28T15:50:06.791Z",
+      "reviews": [
+          {
+              "id": 1730476506791,
+              "username": "Bruno Diaz",
+              "stars": "5",
+              "opinion": "La isla dinámica es una maravilla",
+              "created_at": "2024-10-28T15:55:06.791Z"
+          },
+          {
+              "id": 1730476506791,
+              "username": "Alexander Guillén",
+              "stars": "4",
+              "opinion": "Su batería no dura tanto",
+              "created_at": "2024-10-30T15:57:06.791Z"
+          }
+      ]
+  }
+]
